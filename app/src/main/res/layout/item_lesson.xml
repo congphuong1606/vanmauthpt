@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:background="#c76767"
+        android:layout_height="40dp"
+      />
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="bhfvebkvbjefvbldjcbnjkdbvskhbc"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_des_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="vhafbviaebfvc" />
+    </LinearLayout>
+
+
+</LinearLayout>
