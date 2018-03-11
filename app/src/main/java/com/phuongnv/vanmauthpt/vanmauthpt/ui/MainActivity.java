@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements OnClickLessonAdap
         ButterKnife.bind(this);
         setAdapter();
         keyBoard();
-        readData();
+        readData("10");
         //Spiner
         setupSpinner();
     }
@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity implements OnClickLessonAdap
         rcvLesson.setAdapter(lessonAdapter);
     }
 
-    private void readData() {
+    private void readData(String c) {
         database = Database.initDatabase(this, "vanmauthpt.sqlite");
-        Cursor cursor = database.rawQuery("select * from lesson where class =10", null);
+        Cursor cursor = database.rawQuery("select * from lesson where class = "+c, null);
         lessons.clear();
 //        listSeach.clear();
         if (cursor != null && cursor.getCount() > 0) {
@@ -129,6 +129,18 @@ public class MainActivity extends AppCompatActivity implements OnClickLessonAdap
 
             @Override
             public void onItemSelected(MaterialSpinner view, int position, long id, String item) {
+                switch (item){
+                    case "VĂN MẪU LỚP 11":
+                        readData("11");
+                        break;
+                    case "VĂN MẪU LỚP 10":
+                        readData("10");
+                        break;
+                    case "VĂN MẪU LỚP 12":
+                        readData("12");
+                        break;
+
+                }
                 Snackbar.make(view, "Clicked " + item, Snackbar.LENGTH_LONG).show();
             }
         });

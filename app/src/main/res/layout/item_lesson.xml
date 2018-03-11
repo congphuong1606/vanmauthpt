@@ -7,29 +7,33 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="40dp"
-        android:background="#c76767"
         android:layout_height="40dp"
-      />
+        android:background="#c76767" />
 
     <LinearLayout
-        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_name_lesson"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="bhfvebkvbjefvbldjcbnjkdbvskhbc"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:text="bhfvebkvbjefvbldjcbnjkdbvsfvsdfsdsfvvvvvvvvvvvvvvvvvvvvvvvvfvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvfsdfvkhbc"
             android:textColor="#000"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/tv_des_lesson"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="vhafbviaebfvc" />
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:text="vhafbviaebfvc"
+            android:textSize="12sp" />
     </LinearLayout>
 
 
