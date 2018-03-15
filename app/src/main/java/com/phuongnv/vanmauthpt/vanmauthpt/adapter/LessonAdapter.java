@@ -43,7 +43,8 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Lesson lesson = lessons.get(position);
-        holder.tvDesLesson.setText(lesson.getDes());
+        String index=String.valueOf(position+1);
+        holder.tvSTT.setText(index);
         holder.tvNameLesson.setText(lesson.getName());
     }
 
@@ -70,8 +71,8 @@ public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        @BindView(R.id.tv_des_lesson)
-        TextView tvDesLesson;
+        @BindView(R.id.tv_stt)
+        TextView tvSTT;
         @BindView(R.id.tv_name_lesson)
         TextView tvNameLesson;
 
