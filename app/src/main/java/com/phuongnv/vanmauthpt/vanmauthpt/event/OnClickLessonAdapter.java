@@ -5,5 +5,5 @@ package com.phuongnv.vanmauthpt.vanmauthpt.event;
  */
 
 public interface OnClickLessonAdapter {
-    void onClick(String path, String name);
+    void onClick(String path,String link, String name);
 }

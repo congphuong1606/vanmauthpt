@@ -80,7 +80,8 @@ public class MainActivity extends AppCompatActivity implements OnClickLessonAdap
                     String des = cursor.getString(2);
                     String chapter = cursor.getString(3);
                     String path = cursor.getString(4);
-                    lessons.add(new Lesson(id, name, des, chapter, path));
+                    String link = cursor.getString(5);
+                    lessons.add(new Lesson(id, name, des, chapter, path,link));
                 } while (cursor.moveToNext());
             }
         }
@@ -93,9 +94,10 @@ public class MainActivity extends AppCompatActivity implements OnClickLessonAdap
 
     }
     @Override
-    public void onClick(String path, String name) {
+    public void onClick(String path,String link, String name) {
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra("path", path);
+        intent.putExtra("link", link);
         intent.putExtra("name", name);
         startActivity(intent);
     }

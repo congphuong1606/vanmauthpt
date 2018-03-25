@@ -10,14 +10,7 @@ public class Lesson {
     String des;
     String chapter;
     String path;
-
-    public Lesson(String id, String name, String des, String chapter, String path) {
-        this.id = id;
-        this.name = name;
-        this.des = des;
-        this.chapter = chapter;
-        this.path = path;
-    }
+    String link;
 
     public Lesson() {
     }
@@ -60,5 +53,22 @@ public class Lesson {
 
     public void setPath(String path) {
         this.path = path;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public Lesson(String id, String name, String des, String chapter, String path, String link) {
+        this.id = id;
+        this.name = name;
+        this.des = des;
+        this.chapter = chapter;
+        this.path = path;
+        this.link = link;
     }
 }
