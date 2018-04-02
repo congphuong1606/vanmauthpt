@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\Win\github-android\vanmauthpt\app\app.iml" filepath="E:\Win\github-android\vanmauthpt\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/vanmauthpt.iml" filepath="$PROJECT_DIR$/.idea/vanmauthpt.iml" />
       <module fileurl="file://E:\Win\github-android\vanmauthpt\vanmauthpt.iml" filepath="E:\Win\github-android\vanmauthpt\vanmauthpt.iml" />
     </modules>
